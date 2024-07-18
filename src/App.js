@@ -12,7 +12,6 @@ function App() {
   const [minAmount, setMinAmount] = useState("");
   const [maxAmount, setMaxAmount] = useState("");
   const [selectedCustomer, setSelectedCustomer] = useState(null);
-
   useEffect(() => {
     fetchCustomers().then((response) => {
       setCustomers(response.data);
